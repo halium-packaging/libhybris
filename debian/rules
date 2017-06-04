@@ -87,8 +87,8 @@ ARCH_CONFIGURATION =
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), armhf))
 ARCH_CONFIGURATION = \
 	--enable-arch=arm \
-	--enable-mali-quirks
-#   --enable-experimental
+	--enable-mali-quirks \
+	--enable-experimental
 # We enable the linker selection overrides here as we want to stay
 # with the jb linker on a range of selected production devices to
 # not cause any extra risk for regressions on them. They will
